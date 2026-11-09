@@ -24,9 +24,11 @@ from typing import IO
 
 DOC_NAMES = (
     "README.md",
-    "README.ru.md",
-    "ENGINE_CHANGES.md",
-    "ENGINE_CHANGES.ru.md",
+    "README.en.md",
+    "docs/installation.md",
+    "docs/installation-en.md",
+    "docs/development.md",
+    "docs/engine-changes.md",
     "LICENSE",
     "THIRD_PARTY.txt",
 )

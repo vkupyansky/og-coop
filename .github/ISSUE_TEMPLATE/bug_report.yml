@@ -1,51 +1,52 @@
-name: "Problem / Ошибка"
-description: "Something does not work — installer, game or server / Что-то не работает — установщик, игра или сервер"
+name: "Ошибка / Problem"
+description: "Ошибка установщика, игры или сервера / Installer, game or server problem"
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! Please write in English or Russian. / Спасибо! Можно писать по-английски или по-русски.
+        Опишите проблему по-русски или по-английски. Перед отправкой проверьте журналы на частные данные.
+        English reports are welcome. Review logs for private information before attaching them.
   - type: dropdown
     id: where
     attributes:
-      label: "Where is the problem? / Где проблема?"
+      label: "Где проблема? / Where is the problem?"
       options:
-        - "Installer / Установщик"
-        - "In the game / В игре"
-        - "Server / Сервер"
-        - "Other / Другое"
+        - "Установщик / Installer"
+        - "В игре / In the game"
+        - "Сервер / Server"
+        - "Другое / Other"
     validations:
       required: true
   - type: textarea
     id: what
     attributes:
-      label: "What happened? / Что случилось?"
-      description: "What you did, what you expected and what you saw instead. / Что делали, что ожидали и что получилось."
+      label: "Что случилось? / What happened?"
+      description: "Что делали, что ожидали и что получилось. / Steps, expected result and actual result."
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: "OG Coop version / Версия OG Coop"
-      description: "Menu J → Settings → About, the installer's first line, or the release name. / Меню J → Настройки → «О дополнении», первая строка установщика или название выпуска."
+      label: "Версия OG Coop / OG Coop version"
+      description: "J > Настройки > О дополнении, первая строка установщика или название выпуска. / J > Settings > About, the installer's first line or release name."
       placeholder: "0.4.3"
   - type: dropdown
     id: platform
     attributes:
-      label: "Game / Игра"
+      label: "Игра / Game"
       options:
         - "Rockstar Games Launcher"
         - "Steam"
         - "Epic Games"
         - "VK Play"
-        - "Other / Другое"
+        - "Другое / Other"
   - type: textarea
     id: logs
     attributes:
-      label: "Logs / Журналы"
+      label: "Журналы / Logs"
       description: |
-        Drag files here. / Перетащите файлы сюда.
-        - Installer / установщик: `install-log.txt` next to Install.exe / рядом с Install.exe
-        - Game / игра: `scripts/RageCoop/Data/RageCoop.Client.log` in the GTA folder / в папке GTA
-        - Server / сервер: copy the text from the server window / скопируйте текст из окна сервера
+        Перетащите проверенные файлы сюда. / Attach reviewed files here.
+        - Установщик / installer: install-log.txt рядом с Install.exe / next to Install.exe
+        - Игра / game: scripts/RageCoop/Data/RageCoop.Client.log в папке GTA / in the GTA folder
+        - Сервер / server: текст окна сервера / text from the server window
