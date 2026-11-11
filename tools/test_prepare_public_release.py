@@ -513,7 +513,7 @@ class PublicReleaseTests(unittest.TestCase):
     def test_selected_symlink_and_symbolic_source_directory_are_rejected(self) -> None:
         document = self.root / "publication/README.md"
         document.unlink()
-        document.symlink_to(self.root / "publication/README.en.md")
+        document.symlink_to(self.root / "publication/README.ru.md")
         with self.assertRaises(release.ReleaseError):
             self.prepare()
         self.assert_no_release_outputs()

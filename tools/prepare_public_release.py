@@ -24,7 +24,7 @@ from typing import IO
 
 DOC_NAMES = (
     "README.md",
-    "README.en.md",
+    "README.ru.md",
     "docs/installation.md",
     "docs/installation-en.md",
     "docs/development.md",
